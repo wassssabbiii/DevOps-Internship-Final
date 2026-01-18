@@ -11,19 +11,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Show folders (debug)
-        run: |
-          echo "ROOT:"
-          ls -la
-          echo "Module3:"
-          ls -la Module3
-
-      - name: Give permission
+      - name: Make script executable
         run: chmod +x Module3/system-info.sh
 
-      - name: Run script
-        run: bash Module3/system-info.sh
+      - name: Run system-info script
+        run: ./Module3/system-info.sh
 
-      - name: Print success
+      - name: Print success message
         run: echo "Week 3 CI Successful"
-
