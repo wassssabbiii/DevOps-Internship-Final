@@ -11,32 +11,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Make script executable
+      - name: Show folders (debug)
+        run: |
+          echo "ROOT:"
+          ls -la
+          echo "Module3:"
+          ls -la Module3
+
+      - name: Give permission
         run: chmod +x Module3/system-info.sh
 
-      - name: Run system-info script
-        run: ./Module3/system-info.sh
+      - name: Run script
+        run: bash Module3/system-info.sh
 
-      - name: Print success message
+      - name: Print success
         run: echo "Week 3 CI Successful"
-name: Week3-CI
 
-on:
-  push:
-
-jobs:
-  system-info-job:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Give execute permission
-        run: chmod +x system-info.sh
-
-      - name: Run system-info script
-        run: ./system-info.sh
-
-      - name: Success message
-        run: echo "Week 3 CI Successful"
