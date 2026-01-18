@@ -1,0 +1,20 @@
+ls - Lists files and directories
+pwd - Shows current directory path
+cd - Changes directory
+mkdir - Creates a directory
+rmdir - Deletes empty directory
+touch - Creates an empty file
+cp - Copies files or directories
+mv - Moves or renames files
+rm - Deletes files or directories
+cat - Displays file content
+less - Views file page by page
+nano - Text editor
+vim - Advanced text editor
+chmod - Changes file permissions
+chown - Changes file ownership
+whoami - Shows current user
+id - Displays user ID and groups
+ps - Shows running processes
+top - Displays live system processes
+df - Shows disk space usage

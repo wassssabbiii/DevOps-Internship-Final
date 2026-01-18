@@ -1,0 +1,42 @@
+name: Final-CI
+
+on:
+  push:
+
+jobs:
+  run-system-info:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Make script executable
+        run: chmod +x Module3/system-info.sh
+
+      - name: Run system-info script
+        run: ./Module3/system-info.sh
+
+      - name: Print success message
+        run: echo "Week 3 CI Successful"
+name: Week3-CI
+
+on:
+  push:
+
+jobs:
+  system-info-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Give execute permission
+        run: chmod +x system-info.sh
+
+      - name: Run system-info script
+        run: ./system-info.sh
+
+      - name: Success message
+        run: echo "Week 3 CI Successful"
