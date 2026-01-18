@@ -1,7 +1,7 @@
-# DevOps-Internship-Final
-![CI](https://github.com/<your-username>/DevOps-Internship-Final/actions/workflows/ci.yml/badge.svg)
+
 
 # DevOps Internship - Final Submission
+![CI](https://github.com/wassssabbiii/DevOps-Internship-Final/actions/workflows/ci.yml/badge.svg)
 
 This repository contains all modules completed during the DevOps Internship.
 
